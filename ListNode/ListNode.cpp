@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<malloc.h>
+#include<iostream>
+#include<vector>
 using namespace std;
 #define OK 1
 #define ERROR 0
@@ -86,14 +88,37 @@ ListNode* reverseList(ListNode* head) {
     return head;
 }
 
+/**
+ * 判断链表是否回文
+ * 解法：借助数组
+ * 
+ */
+bool isPalindrome(ListNode* head) {
+    ListNode *curr = head;
+    vector<int> nums;
+    while(curr != nullptr){
+        nums.push_back(curr->val);
+        curr = curr->next;
+    }
+    for (int i = 0, j = (int)nums.size()-1; i < j; ++i, --j){
+        if(nums[i] != nums[j]){
+            return false;
+        }
+    }
+    return true;
+    
+}
+
+
+
 
 int main(){
-    int a[] = {1,2,6,3,4,5,6};
+    int a[] = {1,2};
     int b = 0;
     ListNode *L;
-    initNodeList_01(L, a, 7);
+    initNodeList_01(L, a, 2);
     printNodeList(L);
-    reverseList(L);
-    printNodeList(L);
+    bool s = isPalindrome(L);
+    cout << boolalpha << s <<endl;
     return 0;
 }
