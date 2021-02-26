@@ -1,0 +1,3 @@
+"D:\C-C++\tool\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ListNode.dir/objects.a
+D:\C-C++\tool\mingw64\bin\ar.exe cr CMakeFiles\ListNode.dir/objects.a @CMakeFiles\ListNode.dir\objects1.rsp
+D:\C-C++\tool\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\ListNode.dir/objects.a -Wl,--no-whole-archive  -o ListNode.exe -Wl,--out-implib,libListNode.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ListNode.dir\linklibs.rsp

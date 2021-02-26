@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/C-C++/Github/C++_LeetCodePractice/ListNode/ListNode.cpp
+stdio.h
+-
+malloc.h
+-
+iostream
+-
+vector
+-
+
