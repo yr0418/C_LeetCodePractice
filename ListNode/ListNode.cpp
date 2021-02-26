@@ -109,8 +109,14 @@ bool isPalindrome(ListNode* head) {
     
 }
 
-
-
+/**
+ * 删除指定节点
+ * 解法：复制下一个节点，并删除下一个节点
+ */ 
+void deleteNode(ListNode* node) {
+    node->val = node->next->val;
+    node->next = node->next->next;
+}
 
 int main(){
     int a[] = {1,2};

@@ -63,6 +63,7 @@ TreeNode* lowestCommonAncestor_1(TreeNode* root, TreeNode* p, TreeNode* q) {
     return curr;
 }
 
+// 二叉搜索树，获取到达指定节点的路径
 vector<TreeNode*> getPath(TreeNode* root, TreeNode* target){
     vector<TreeNode*> path;
     TreeNode* curr = root;
