@@ -2,17 +2,10 @@
 #include<malloc.h>
 #include<iostream>
 #include<vector>
+#include "ListNode.h"
 using namespace std;
 #define OK 1
 #define ERROR 0
-
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
 
 //尾插法创建不带表头节点单链表，先进先出
 int initNodeList_01(ListNode *&L, int a[], int length){
