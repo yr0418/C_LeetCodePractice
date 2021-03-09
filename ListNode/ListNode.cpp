@@ -143,19 +143,37 @@ void merge(ListNode* A, ListNode* B, ListNode* &C){ // C: 采取 引用 标识
     }
 }
 
+/**
+ * 删除指定结点
+ * @param C：链表
+ * @param x：指定值
+ * @return
+ */
+int findAndDelete(ListNode* C, int x){
+    ListNode* pre = C;
+    ListNode* node = C->next;
+    while (node != nullptr){
+        if (node->val == x){
+            pre->next = node->next;
+            free(node);
+            return 1;
+        } else{
+            pre = node;
+            node = node->next;
+        }
+    }
+    return 0;
+}
+
 
 int main(){
     int a[] = {0,4,6};
     int b[] = {1,3,5,7};
     ListNode *A, *B, *C;
     initNodeList_01(A, a, 3);
+    int ans = findAndDelete(A, 4);
     printNodeList(A);
-
-    initNodeList_01(B, b, 4);
-    printNodeList(B);
-
-    merge(A, B, C);
-    printNodeList(C);
+    printf("%d", ans);
 //    bool s = isPalindrome(L);
 //    cout << boolalpha << s <<endl;
     return 0;
