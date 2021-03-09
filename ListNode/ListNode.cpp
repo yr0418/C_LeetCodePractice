@@ -20,14 +20,14 @@ int initNodeList_01(ListNode *&L, int a[], int length){
         r = s;
     }
     //头结点后移一位，使得不带头结点
-    L = L->next;
+//    L = L->next;
     return OK;
 }
 
 //顺序打印链表
 void printNodeList(ListNode *L){
-    ListNode *p;
-    p = L;
+    ListNode *p = L->next;
+//    p = L;
     while (p){
         printf("%d  ", p->val);
         p = p->next;
@@ -111,13 +111,52 @@ void deleteNode(ListNode* node) {
     node->next = node->next->next;
 }
 
+/**
+ * 合并两个链表
+ */
+void merge(ListNode* A, ListNode* B, ListNode* &C){ // C: 采取 引用 标识
+    ListNode* A_next = A->next;
+    ListNode* B_next = B->next;
+    C = A;
+    C->next = nullptr;
+    ListNode* C_next = C;
+    while (A_next != nullptr || B_next != nullptr){
+        if (A_next != nullptr && B_next != nullptr){
+            if (A_next->val < B_next->val){
+                C_next->next = A_next;
+                C_next = C_next->next;
+                A_next = A_next->next;
+            } else{
+                C_next->next = B_next;
+                C_next = C_next->next;
+                B_next = B_next->next;
+            }
+        }
+        else if (A_next == nullptr){
+            C_next->next = B_next;
+            break;
+        }
+        else {
+            C_next->next = A_next;
+            break;
+        }
+    }
+}
+
+
 int main(){
-    int a[] = {1,2};
-    int b = 0;
-    ListNode *L;
-    initNodeList_01(L, a, 2);
-    printNodeList(L);
-    bool s = isPalindrome(L);
-    cout << boolalpha << s <<endl;
+    int a[] = {0,4,6};
+    int b[] = {1,3,5,7};
+    ListNode *A, *B, *C;
+    initNodeList_01(A, a, 3);
+    printNodeList(A);
+
+    initNodeList_01(B, b, 4);
+    printNodeList(B);
+
+    merge(A, B, C);
+    printNodeList(C);
+//    bool s = isPalindrome(L);
+//    cout << boolalpha << s <<endl;
     return 0;
 }

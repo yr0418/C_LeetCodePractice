@@ -8,8 +8,9 @@
 
 class Queue {
 public:
-    int val
-    int
+    int val;
+    int front;
+    int rear;
 };
 
 
