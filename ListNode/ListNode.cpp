@@ -166,6 +166,8 @@ int findAndDelete(ListNode* C, int x){
 }
 
 
+
+
 int main(){
     int a[] = {0,4,6};
     int b[] = {1,3,5,7};

@@ -143,6 +143,19 @@ ListNode/fast:
 .PHONY : ListNode/fast
 
 #=============================================================================
+# Target rules for targets named SqList
+
+# Build rule for target.
+SqList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SqList
+.PHONY : SqList
+
+# fast build rule for target.
+SqList/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SqList.dir\build.make CMakeFiles/SqList.dir/build
+.PHONY : SqList/fast
+
+#=============================================================================
 # Target rules for targets named TreeNode
 
 # Build rule for target.
@@ -182,6 +195,33 @@ ListNode/ListNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ListNode.dir\build.make CMakeFiles/ListNode.dir/ListNode/ListNode.cpp.s
 .PHONY : ListNode/ListNode.cpp.s
 
+SqList/SqList.obj: SqList/SqList.cpp.obj
+
+.PHONY : SqList/SqList.obj
+
+# target to build an object file
+SqList/SqList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SqList.dir\build.make CMakeFiles/SqList.dir/SqList/SqList.cpp.obj
+.PHONY : SqList/SqList.cpp.obj
+
+SqList/SqList.i: SqList/SqList.cpp.i
+
+.PHONY : SqList/SqList.i
+
+# target to preprocess a source file
+SqList/SqList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SqList.dir\build.make CMakeFiles/SqList.dir/SqList/SqList.cpp.i
+.PHONY : SqList/SqList.cpp.i
+
+SqList/SqList.s: SqList/SqList.cpp.s
+
+.PHONY : SqList/SqList.s
+
+# target to generate assembly for a file
+SqList/SqList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SqList.dir\build.make CMakeFiles/SqList.dir/SqList/SqList.cpp.s
+.PHONY : SqList/SqList.cpp.s
+
 TreeNode/TreeNode.obj: TreeNode/TreeNode.cpp.obj
 
 .PHONY : TreeNode/TreeNode.obj
@@ -218,10 +258,14 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ListNode
+	@echo ... SqList
 	@echo ... TreeNode
 	@echo ... ListNode/ListNode.obj
 	@echo ... ListNode/ListNode.i
 	@echo ... ListNode/ListNode.s
+	@echo ... SqList/SqList.obj
+	@echo ... SqList/SqList.i
+	@echo ... SqList/SqList.s
 	@echo ... TreeNode/TreeNode.obj
 	@echo ... TreeNode/TreeNode.i
 	@echo ... TreeNode/TreeNode.s
