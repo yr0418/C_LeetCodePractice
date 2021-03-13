@@ -1,11 +1,3 @@
-//
-// Created by Alone-Wolf on 2021-03-07.
-//
-
-#ifndef C___LEETCODEPRACTICE_TREENODE_H
-#define C___LEETCODEPRACTICE_TREENODE_H
-
-
 class TreeNode {
 
 public:
@@ -17,6 +9,3 @@ public:
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 
 };
-
-
-#endif //C___LEETCODEPRACTICE_TREENODE_H
