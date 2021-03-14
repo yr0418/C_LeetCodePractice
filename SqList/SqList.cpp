@@ -1,5 +1,6 @@
 #include "SqList.h"
 #include<stdio.h>
+#include "C2_insertElem.h"
 
 using namespace std;
 #define OK 1
@@ -24,12 +25,13 @@ void printSqList(SqList L){
 }
 
 
-
 int main(){
-    int a[] = {1,2,3,4,5,6};
+    int a[] = {1,3,5,2,4,6};
     SqList L;
-    init(L, a, 6);
-    printSqList(L);
-    moveP(L, 2);
-    printSqList(L);
+    C2_insertElem demo;
+    demo.insertElem(a, 3, 3);
+    for (int i = 0; i <6 ; ++i) {
+        printf("%d  ", a[i]);
+    }
+//    printSqList(L);
 }
