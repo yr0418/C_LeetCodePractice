@@ -1,5 +1,5 @@
 /**
- * @moduleName: C9_binaryTreePaths_1
+ * @moduleName: C3_binaryTreePaths_1
  * @description: 二叉树中的全部路径
  *
  * @author: 杨睿
@@ -8,7 +8,7 @@
 
 #include "TreeNode.h"
 #include <vector>
-class C9_binaryTreePaths_1 {
+class C3_binaryTreePaths_1 {
 
 public:
     // 二叉树中的所有路径，深度优先搜索，获取路径

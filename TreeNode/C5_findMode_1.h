@@ -11,7 +11,7 @@
 #include <vector>
 #include "TreeNode.h"
 
-class C13_findMode_1 {
+class C5_findMode_1 {
 
 public:
 

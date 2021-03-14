@@ -1,5 +1,5 @@
 /**
- * @moduleName: C7_lowestCommonAncestor_1
+ * @moduleName: C2_lowestCommonAncestor_1
  * @description: 二叉搜索树的最近公共祖先
  *
  * @author: 杨睿
@@ -8,7 +8,7 @@
 
 #include "TreeNode.h"
 #include <vector>
-class C7_lowestCommonAncestor_1 {
+class C2_lowestCommonAncestor_1 {
 
 public:
     /**

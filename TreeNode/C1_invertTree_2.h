@@ -1,5 +1,5 @@
 /**
- * @moduleName: C4_invertTree_2
+ * @moduleName: C1_invertTree_2
  * @description: //反转二叉树，从叶子节点开始反转，从下往上递归
  *
  * @author: 杨睿
@@ -8,7 +8,7 @@
 
 #include "TreeNode.h"
 
-class C4_invertTree_2 {
+class C1_invertTree_2 {
 
 public:
     //反转二叉树，从叶子节点开始反转，从下往上递归

@@ -10,7 +10,7 @@
 #include <vector>
 #include "TreeNode.h"
 
-class findMode_2 {
+class C5_findMode_2 {
 
 public:
     vector<int> answer;

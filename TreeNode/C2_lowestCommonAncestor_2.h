@@ -1,5 +1,5 @@
 /**
- * @moduleName: C7_lowestCommonAncestor_2
+ * @moduleName: C2_lowestCommonAncestor_2
  * @description: ${description}
  *
  * @author: 杨睿
@@ -7,7 +7,7 @@
  **/
 
 #include "TreeNode.h"
-class C7_lowestCommonAncestor_2 {
+class C2_lowestCommonAncestor_2 {
 
 public:
     /**

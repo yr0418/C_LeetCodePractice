@@ -1,5 +1,5 @@
 /**
- * @moduleName: C10_sumOfLeftLeaves_2
+ * @moduleName: C4_sumOfLeftLeaves_2
  * @description: 左叶子之和
  *
  * @author: 杨睿
@@ -8,7 +8,7 @@
 
 # include "TreeNode.h"
 #include <queue>
-class C10_sumOfLeftLeaves_2 {
+class C4_sumOfLeftLeaves_2 {
 
 public:
     /**

@@ -1,5 +1,5 @@
 /**
- * @moduleName: C9_binaryTreePaths_2
+ * @moduleName: C3_binaryTreePaths_2
  * @description: 二叉树中的所有路径
  *
  * @author: 杨睿
@@ -10,7 +10,7 @@
 #include <vector>
 #include <queue>
 
-class C9_binaryTreePaths_2 {
+class C3_binaryTreePaths_2 {
 
 public:
     /**
