@@ -29,7 +29,7 @@ public:
         } else{
             // 后续遍历，更新 最小绝对差
             int abs = node->val - pre;
-            min = min < abs? min: abs;
+            ans = ans < abs? ans: abs;
             pre = node->val;  // pre 后移
         }
         dfs(node->right, pre, ans);
