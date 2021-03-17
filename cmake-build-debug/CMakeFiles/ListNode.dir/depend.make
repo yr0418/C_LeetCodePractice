@@ -4,6 +4,3 @@
 CMakeFiles/ListNode.dir/ListNode/ListNode.cpp.obj: ../ListNode/ListNode.cpp
 CMakeFiles/ListNode.dir/ListNode/ListNode.cpp.obj: ../ListNode/ListNode.h
 
-CMakeFiles/ListNode.dir/SqList/SqList.cpp.obj: ../SqList/SqList.cpp
-CMakeFiles/ListNode.dir/SqList/SqList.cpp.obj: ../SqList/SqList.h
-

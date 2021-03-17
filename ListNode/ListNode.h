@@ -1,7 +1,3 @@
-#ifndef C___LEETCODEPRACTICE_LISTNODE_H
-#define C___LEETCODEPRACTICE_LISTNODE_H
-
-
 class ListNode {
 
 public:
@@ -13,8 +9,4 @@ public:
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 
 
-
 };
-
-
-#endif

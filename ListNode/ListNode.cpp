@@ -40,9 +40,8 @@ int main(){
     int a[] = {0,4,6};
     int b[] = {1,3,5,7};
     ListNode *A, *B, *C;
-    initNodeList_01(A, a, 3);
-    printNodeList(A);
-    printf("%d", ans);
+//    initNodeList_01(A, a, 3);
+//    printNodeList(A);
 //    bool s = isPalindrome(L);
 //    cout << boolalpha << s <<endl;
     return 0;
